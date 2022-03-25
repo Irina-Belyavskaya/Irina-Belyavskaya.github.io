@@ -495,9 +495,12 @@ i {
     padding-bottom: 124px;
 }
 
+.blog-padding {
+    padding-bottom: 129px;
+}
+
 .blog__row {
     display: flex;
-    padding-top: 129px;
 }
 
 .row__date-category {
