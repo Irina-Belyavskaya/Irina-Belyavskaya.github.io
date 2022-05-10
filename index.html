@@ -25,7 +25,6 @@
             </a>
         </div>
    </header> 
-
    <section class="intro-main">
         <div class="container">
             <div class="wrap">
@@ -45,7 +44,6 @@
             </a>    
         </div>
    </section>
-
    <section class="about-us">
         <div class="container">
             <div class="intro">
@@ -81,7 +79,6 @@
             </div>  
         </div> 
    </section>
-
    <section class="our-services">
         <div class="container"> 
             <div class="intro">
@@ -101,7 +98,7 @@
                         <p>
                             At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
                         </p>
-                        <button class="btn-read">READ MORE</button>
+                        <button class="btn-read" id="research-open-modal" onclick="ShowModal('research-open-modal','Research')">READ MORE</button>
                     </div>
                     <div class="block">
                         <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
@@ -110,7 +107,7 @@
                         <p>
                             At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
                         </p>
-                        <button class="btn-read">READ MORE</button>
+                        <button class="btn-read" id="portfolio-open-modal" onclick="ShowModal('portfolio-open-modal','Portfolio')">READ MORE</button>
                     </div>
                     <div class="block">
                         <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
@@ -119,7 +116,7 @@
                         <p>
                             At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
                         </p>
-                        <button class="btn-read">READ MORE</button>
+                        <button class="btn-read" id="support-open-modal" onclick="ShowModal('support-open-modal','Support')">READ MORE</button>
                     </div>
                 </div>
                 <div class="blocks">
@@ -130,7 +127,7 @@
                         <p>
                             At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
                         </p>
-                        <button class="btn-read">READ MORE</button>
+                        <button class="btn-read" id="documentation-open-modal" onclick="ShowModal('documentation-open-modal','Documentaion')">READ MORE</button>
                     </div>
                     <div class="block">
                         <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
@@ -139,7 +136,7 @@
                         <p>
                             At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
                         </p>
-                        <button class="btn-read">READ MORE</button>
+                        <button class="btn-read" id="development-open-modal" onclick="ShowModal('development-open-modal','Development')">READ MORE</button>
                     </div>
                     <div class="block">
                         <img src="img/smartphone copy.png" alt="Smartphone" class="phone phone-black">  
@@ -148,13 +145,12 @@
                         <p>
                             At vero eos et accusamus et iusto <br> odio dignissimos ducimus qui <br> blanditiis praesentium voluptatum iti <br> atque corrupti quos.
                         </p>
-                        <button class="btn-read">READ MORE</button>
+                        <button class="btn-read" id="design-open-modal" onclick="ShowModal('design-open-modal','Design')">READ MORE</button>
                     </div>
                 </div>
             </div>
         </div>
    </section>
-
    <section class="latest-works">
         <div class="container"> 
             <div class="intro">
@@ -291,257 +287,279 @@
             </div>
         </div>
     </div>
-</section>
-<section class="team">
-    <div class="container">
-        <div class="intro">
-            <h2>
-                Our team member
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
-        <div class="team__row">
-            <div class="team__card">
-                <img src="img/man 1.png" alt="John">
-                <p class="team__name">
-                    John Doe
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="intro">
+                <h2>
+                    Our team member
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <p class="team__post">
-                    general manager
-                </p>
-                <div class="team__icons">
-                    <a href="#" class="team__icons-link">
-                        <div class="facebook link__ico">
-                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="twitter link__ico">
-                            <i class="fa-brands fa-twitter fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="message link__ico">
-                            <i class="fa-solid fa-comments fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="dribble link__ico">
-                            <i class="fa-brands fa-dribbble fa-xl"></i>
-                        </div>
-                    </a>
-                </div>
             </div>
-            <div class="team__card">
-                <img src="img/man 2.png" alt="John">
-                <p class="team__name">
-                    alexa biru
-                </p>
-                <p class="team__post">
-                    office director
-                </p>
-                <div class="team__icons">
-                    <a href="#" class="team__icons-link">
-                        <div class="facebook link__ico">
-                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="twitter link__ico">
-                            <i class="fa-brands fa-twitter fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="message link__ico">
-                            <i class="fa-solid fa-comments fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="dribble link__ico">
-                            <i class="fa-brands fa-dribbble fa-xl"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="team__card">
-                <img src="img/man 3.png" alt="John">
-                <p class="team__name">
-                    ronobir sing
-                </p>
-                <p class="team__post">
-                    admin
-                </p>
-                <div class="team__icons">
-                    <a href="#" class="team__icons-link">
-                        <div class="facebook link__ico">
-                            <i class="fa-brands fa-facebook-f fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="twitter link__ico">
-                            <i class="fa-brands fa-twitter fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="message link__ico">
-                            <i class="fa-solid fa-comments fa-xl"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="team__icons-link">
-                        <div class="dribble link__ico">
-                            <i class="fa-brands fa-dribbble fa-xl"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="team__circles">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </div>
-</section>
-<section class="blogg">
-    <div class="container">
-        <div class="intro blog-padding">
-            <h2>
-                Blog
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
-        <div class="blog__row">
-            <div class="row__left">
-                <img src="img/seo.png" alt="SEO">
-            </div>
-            <div class="row__right">
-                <p class="row__title">
-                    <a href="#">SEO quis vestibulum</a>
-                </p>
-                <div class="row__date-category">
-                    <i class="fa-regular fa-calendar-days fa-lg"></i>
-                    <p class="date">
-                        14.07.2017
+            <div class="team__row">
+                <div class="team__card">
+                    <img src="img/man 1.png" alt="John">
+                    <p class="team__name">
+                        John Doe
                     </p>
-                    <i class="fa-regular fa-file fa-lg"></i>
-                    <p class="category">
-                        Development
+                    <p class="team__post">
+                        general manager
                     </p>
+                    <div class="team__icons">
+                        <a href="#" class="team__icons-link">
+                            <div class="facebook link__ico">
+                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="twitter link__ico">
+                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="message link__ico">
+                                <i class="fa-solid fa-comments fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="dribble link__ico">
+                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <p class="row__info">
-                    Dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris nisi ut aliquip ex ea com-<br>modo consequat...
-                </p>
+                <div class="team__card">
+                    <img src="img/man 2.png" alt="John">
+                    <p class="team__name">
+                        alexa biru
+                    </p>
+                    <p class="team__post">
+                        office director
+                    </p>
+                    <div class="team__icons">
+                        <a href="#" class="team__icons-link">
+                            <div class="facebook link__ico">
+                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="twitter link__ico">
+                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="message link__ico">
+                                <i class="fa-solid fa-comments fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="dribble link__ico">
+                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__card">
+                    <img src="img/man 3.png" alt="John">
+                    <p class="team__name">
+                        ronobir sing
+                    </p>
+                    <p class="team__post">
+                        admin
+                    </p>
+                    <div class="team__icons">
+                        <a href="#" class="team__icons-link">
+                            <div class="facebook link__ico">
+                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="twitter link__ico">
+                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="message link__ico">
+                                <i class="fa-solid fa-comments fa-xl"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="team__icons-link">
+                            <div class="dribble link__ico">
+                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
             </div>
         </div>
-        <div class="blog__row">
-            <div class="row__left second-row">
-                <p class="row__title">
-                    <a href="#">SEO quis vestibulum</a>
+    </section>
+    <section class="blogg">
+        <div class="container">
+            <div class="intro">
+                <h2>
+                    Blog
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <div class="row__date-category">
-                    <i class="fa-regular fa-calendar-days fa-lg"></i>
-                    <p class="date">
-                        14.07.2017
+            </div>
+            <div class="blog__row">
+                <div class="row__left">
+                    <img src="img/SEO.png" alt="SEO">
+                </div>
+                <div class="row__right">
+                    <p class="row__title">
+                        <a href="#">SEO quis vestibulum</a>
                     </p>
-                    <i class="fa-regular fa-file fa-lg"></i>
-                    <p class="category">
-                        Development
+                    <div class="row__date-category">
+                        <i class="fa-regular fa-calendar-days fa-lg"></i>
+                        <p class="date">
+                            14.07.2017
+                        </p>
+                        <i class="fa-regular fa-file fa-lg"></i>
+                        <p class="category">
+                            Development
+                        </p>
+                    </div>
+                    <p class="row__info">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris nisi ut aliquip ex ea com-<br>modo consequat...
                     </p>
                 </div>
-                <p class="row__info">
-                    Dolore magna aliqua. Ut enim ad minim veniam, quis<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>commodo consequat...
-                </p>
             </div>
-            <div class="row__right">
-                <img src="img/apple-desk-working-technology.png" alt="Apple">
-            </div>
-        </div>
-        <div class="blog__row">
-            <div class="row__left">
-                <img src="img/imac-apple-mockup-app-38544.png" alt="IPad">
-            </div>
-            <div class="row__right">
-                <p class="row__title">
-                    <a href="#">SEO quis vestibulum</a>
-                </p>
-                <div class="row__date-category">
-                    <i class="fa-regular fa-calendar-days fa-lg"></i>
-                    <p class="date">
-                        14.07.2017
+            <div class="blog__row">
+                <div class="row__left second-row">
+                    <p class="row__title">
+                        <a href="#">SEO quis vestibulum</a>
                     </p>
-                    <i class="fa-regular fa-file fa-lg"></i>
-                    <p class="category">
-                        Development
+                    <div class="row__date-category">
+                        <i class="fa-regular fa-calendar-days fa-lg"></i>
+                        <p class="date">
+                            14.07.2017
+                        </p>
+                        <i class="fa-regular fa-file fa-lg"></i>
+                        <p class="category">
+                            Development
+                        </p>
+                    </div>
+                    <p class="row__info">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>commodo consequat...
                     </p>
                 </div>
-                <p class="row__info">
-                    Dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris nisi ut aliquip ex ea com-<br>modo consequat...
-                </p>
-            </div>
-        </div>
-        <div class="blog__button">
-            <button class="blogg__btn">
-                more view
-            </button>
-        </div>
-    </div>
-</section>
-<section class="contact_us">
-    <div class="container">
-        <div class="intro">
-            <h2>
-                Сontact us
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-        </div>
-        <div class="contacts">
-            <div class="col">
-                <div class="col__ico">
-                    <img src="img/placeholder.png" alt="Placeholder">
+                <div class="row__right">
+                    <img src="img/apple-desk-working-technology.png" alt="Apple">
                 </div>
-                <p class="col__text">
-                    Nobinagar savar,Dhaka<br>Bangladesh
-                </p>
             </div>
-            <div class="col">
-                <div class="col__ico">
-                    <img src="img/phone-call.png" alt="Placeholder">
+            <div class="blog__row">
+                <div class="row__left">
+                    <img src="img/imac-apple-mockup-app-38544.png" alt="IPad">
                 </div>
-                <p class="col__text">
-                    +8801743331996<br>+8801928737807
-                </p>
+                <div class="row__right">
+                    <p class="row__title">
+                        <a href="#">SEO quis vestibulum</a>
+                    </p>
+                    <div class="row__date-category">
+                        <i class="fa-regular fa-calendar-days fa-lg"></i>
+                        <p class="date">
+                            14.07.2017
+                        </p>
+                        <i class="fa-regular fa-file fa-lg"></i>
+                        <p class="category">
+                            Development
+                        </p>
+                    </div>
+                    <p class="row__info">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris nisi ut aliquip ex ea com-<br>modo consequat...
+                    </p>
+                </div>
             </div>
-            <div class="col">
-                <div class="col__ico">
-                    <img src="img/mail.png" alt="Placeholder">
-                </div>
-                <p class="col__text">
-                    quickmasud@gmail.com<br>quickmasud@yahoo.com
-                </p>
-            </div>
-        </div>
-        <form action="">
-            <div class="contacts__form">
-                <div class="form__name-email">
-                    <input type="text" class="form__name" placeholder="Your NAME" required>
-                    <input type="email" class="form__email" placeholder="Your Email" required>
-                </div>
-                <textarea name="message" id="form__message" rows="10" placeholder="Write Message"></textarea>
-                <button class="form__button">
-                    send
+            <div class="blog__button">
+                <button class="blogg__btn">
+                    more view
                 </button>
             </div>
-        </form>
-    </div>
-</section>
-<footer>
-    All rights Reserved © 2017
-</footer>
+        </div>
+    </section>
+    <section class="contact_us">
+        <div class="container">
+            <div class="intro">
+                <h2>
+                    Сontact us
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="contacts">
+                <div class="col">
+                    <div class="col__ico">
+                        <img src="img/placeholder.png" alt="Placeholder">
+                    </div>
+                    <p class="col__text">
+                        Nobinagar savar,Dhaka<br>Bangladesh
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="col__ico">
+                        <img src="img/phone-call.png" alt="Placeholder">
+                    </div>
+                    <p class="col__text">
+                        +8801743331996<br>+8801928737807
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="col__ico">
+                        <img src="img/mail.png" alt="Placeholder">
+                    </div>
+                    <p class="col__text">
+                        quickmasud@gmail.com<br>quickmasud@yahoo.com
+                    </p>
+                </div>
+            </div>
+            <form action="">
+                <div class="contacts__form">
+                    <div class="form__name-email">
+                        <input type="text" class="form__name" placeholder="Your NAME" required>
+                        <input type="email" class="form__email" placeholder="Your Email" required>
+                    </div>
+                    <textarea name="message" id="form__message" rows="10" placeholder="Write Message"></textarea>
+                    <button class="form__button">
+                        send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        All rights Reserved © 2017
+    </footer>
+    <!-- Модальное окно -->
+    <div id="wrapper-modal"> 
+        <div id="overlay" id="modal-overlay"></div>
+        <div id="modal-window">
+            <div id="modal-header">   
+                <h2 id="model-title">Title</h2>
+            </div>
+            <div id="modal-content">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+            </div>
+        </div>
+    </div> 
+    <script src="js/main.js"></script>
 </body>
 </html>
