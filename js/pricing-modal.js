@@ -57,7 +57,7 @@ const onFormSubmit = (event) => {
 
     event.target.style.display = "none";
     closeModal.style.display = "none";
-    orderLabel.style.display = "flex";
+    orderLabel.style.display = "block";
     event.preventDefault();
     setTimeout(() => { modal.style.display = "none" }, 5000);    
 

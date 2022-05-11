@@ -642,7 +642,7 @@ i {
     padding-bottom: 112px;
 }
 
-.form__name, .form__email, .form__phone {
+.form__name, .form__email {
     width: 500px;
     height: 84px;
     border-radius: 10px;
@@ -661,7 +661,7 @@ input::placeholder, textarea::placeholder {
     color: #4d4d4d;
 }
 
-.form__name:focus, .form__email:focus, #form__message:focus, .form__phone:focus {
+.form__name:focus, .form__email:focus, #form__message:focus {
     border: 3px solid #00897b;
     padding: 19px;
 }
