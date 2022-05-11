@@ -225,7 +225,7 @@
                         24/7 supports
                     </p>
                 </div>
-                <button class="price__btn">
+                <button class="price__btn" id="00perMonth" onclick="onOrderBtnClick(event)">
                     order now
                 </button>
             </div>
@@ -253,7 +253,7 @@
                         24/7 supports
                     </p>
                 </div>
-                <button class="price__btn">
+                <button class="price__btn" id="50perMonth" onclick="onOrderBtnClick(event)">
                     order now
                 </button>
             </div>
@@ -281,7 +281,7 @@
                         24/7 supports
                     </p>
                 </div>
-                <button class="price__btn">
+                <button class="price__btn" id="99perMonth" onclick="onOrderBtnClick(event)">
                     order now
                 </button>
             </div>
@@ -560,6 +560,24 @@
             </div>
         </div>
     </div> 
+
+    <div id="pricing-modal-wrapper">
+        <div id="pricing-modal">
+            <span id="pricing-modal-close">&times;</span>
+            <form class="pricing-modal-form-wrapper" onchange="onFormChange(event)" onsubmit="onFormSubmit(event)">
+                <input type="text" class="pricing-modal-field" id="name" placeholder="Your Name" onchange="onFieldChange(event)">
+                <input type="email" class="pricing-modal-field" id="email" placeholder="Your Email" onchange="onFieldChange(event)">
+                <input type="text" class="pricing-modal-field" id="phone" placeholder="Your Phone" onchange="onFieldChange(event)">
+                <input type="submit" class="pricing-modal-btn" value="send" disabled>
+            </form>
+            <div id="order-accept">
+                <h3>Thank you!</h3>
+                <span>Your order has already been accepted.</span>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/pricing-modal.js"></script>
 </body>
 </html>
