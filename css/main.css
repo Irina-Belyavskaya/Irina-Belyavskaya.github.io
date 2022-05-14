@@ -4,8 +4,11 @@ body {
     color: #000;
     padding: 0;
 	margin: 0;
+    
 }
-
+.lock {
+    overflow: hidden;
+}
 div, p, input, button, form, span, li, ul a {
     box-sizing: border-box;
 }
@@ -160,6 +163,7 @@ h3 {
     background-color: #e4fdf9;
     padding-top: 175px;
     padding-bottom: 125px;
+    position: relative;
 }
 
 .wrap-blocks {
@@ -446,6 +450,11 @@ i {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 400px !important;
+}
+
+.card2 {
+    margin: 0 15px 0 15px;
 }
 
 .team__icons {
@@ -475,7 +484,6 @@ i {
     border-radius: 100%;
     background: #00897b;
     margin-right: 10px;
-    cursor: pointer;
 }
 
 .circle:last-child {
@@ -485,10 +493,6 @@ i {
 .team__circles {
     display: flex;
     justify-content: center;
-}
-
-.circle:hover {
-    background: #3949ab;
 }
 
 .team {
@@ -698,6 +702,11 @@ input::placeholder, textarea::placeholder {
     color: #000;
 }
 
+.form__button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 input {
     font-size: 25px;
     outline: none;
@@ -743,12 +752,12 @@ footer {
 }
 
 #modal-window {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%);
     width: 600px;
-    height: 400px;
+    height: auto;
     z-index: 2;
     background-color: #00897b;
     color: white;
@@ -852,3 +861,18 @@ footer {
       font-weight: bold;
       border-bottom: 3px dashed #00897b;
   }
+
+.slide {
+    display: flex;
+    width: 1180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-inner {
+    max-width: 2000px;
+}
+
+.active {
+    background: #3949ab;
+}
