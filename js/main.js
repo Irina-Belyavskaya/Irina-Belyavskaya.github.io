@@ -105,4 +105,4 @@ document.querySelector(".form__button").addEventListener("click", function() {
         }
         circles[slideIndex].className += " active";
         localStorage.setItem('Index', slideIndex);
-    }, 5000);
+    },7000);
