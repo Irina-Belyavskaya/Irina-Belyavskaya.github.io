@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web development project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css"> <!-- Подключаем CSS файл который отключает все стили по умолчанию в браузере -->   
     <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
     <script src="https://kit.fontawesome.com/c3fbd04d84.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
    <header class="navigation">
@@ -81,6 +85,27 @@
    </section>
    <section class="our-services">
         <div class="container"> 
+            <!-- Модальное окно -->
+    <div id="wrapper-modal"> 
+        <div id="overlay" id="modal-overlay"></div>
+        <div id="modal-window">
+            <div id="modal-header">   
+                <h2 id="model-title">Title</h2>
+            </div>
+            <div id="modal-content">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+            </div>
+        </div>
+    </div> 
             <div class="intro">
                 <h2>
                     Our Services
@@ -299,97 +324,295 @@
                 </p>
             </div>
             <div class="team__row">
-                <div class="team__card">
-                    <img src="img/man 1.png" alt="John">
-                    <p class="team__name">
-                        John Doe
-                    </p>
-                    <p class="team__post">
-                        general manager
-                    </p>
-                    <div class="team__icons">
-                        <a href="#" class="team__icons-link">
-                            <div class="facebook link__ico">
-                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                <div class="slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-inner">
+                            <div class="slide">
+                                <div class="team__card">
+                                    <img src="img/man 1.png" alt="John">
+                                    <p class="team__name">
+                                        John Doe
+                                    </p>
+                                    <p class="team__post">
+                                        general manager
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card card2">
+                                    <img src="img/man 2.png" alt="John">
+                                    <p class="team__name">
+                                        alexa biru
+                                    </p>
+                                    <p class="team__post">
+                                        office director
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card">
+                                    <img src="img/man 3.png" alt="John">
+                                    <p class="team__name">
+                                        ronobir sing
+                                    </p>
+                                    <p class="team__post">
+                                        admin
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="twitter link__ico">
-                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            <div class="slide">
+                                <div class="team__card">
+                                    <img src="img/man 2.png" alt="John">
+                                    <p class="team__name">
+                                        alexa biru
+                                    </p>
+                                    <p class="team__post">
+                                        office director
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card card2">
+                                    <img src="img/man 1.png" alt="John">
+                                    <p class="team__name">
+                                        John Doe
+                                    </p>
+                                    <p class="team__post">
+                                        general manager
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card">
+                                    <img src="img/man 3.png" alt="John">
+                                    <p class="team__name">
+                                        ronobir sing
+                                    </p>
+                                    <p class="team__post">
+                                        admin
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="message link__ico">
-                                <i class="fa-solid fa-comments fa-xl"></i>
+                            <div class="slide">
+                                <div class="team__card">
+                                    <img src="img/man 3.png" alt="John">
+                                    <p class="team__name">
+                                        ronobir sing
+                                    </p>
+                                    <p class="team__post">
+                                        admin
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card card2">
+                                    <img src="img/man 2.png" alt="John">
+                                    <p class="team__name">
+                                        alexa biru
+                                    </p>
+                                    <p class="team__post">
+                                        office director
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="team__card">
+                                    <img src="img/man 1.png" alt="John">
+                                    <p class="team__name">
+                                        John Doe
+                                    </p>
+                                    <p class="team__post">
+                                        general manager
+                                    </p>
+                                    <div class="team__icons">
+                                        <a href="#" class="team__icons-link">
+                                            <div class="facebook link__ico">
+                                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="twitter link__ico">
+                                                <i class="fa-brands fa-twitter fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="message link__ico">
+                                                <i class="fa-solid fa-comments fa-xl"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="team__icons-link">
+                                            <div class="dribble link__ico">
+                                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="dribble link__ico">
-                                <i class="fa-brands fa-dribbble fa-xl"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="team__card">
-                    <img src="img/man 2.png" alt="John">
-                    <p class="team__name">
-                        alexa biru
-                    </p>
-                    <p class="team__post">
-                        office director
-                    </p>
-                    <div class="team__icons">
-                        <a href="#" class="team__icons-link">
-                            <div class="facebook link__ico">
-                                <i class="fa-brands fa-facebook-f fa-xl"></i>
-                            </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="twitter link__ico">
-                                <i class="fa-brands fa-twitter fa-xl"></i>
-                            </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="message link__ico">
-                                <i class="fa-solid fa-comments fa-xl"></i>
-                            </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="dribble link__ico">
-                                <i class="fa-brands fa-dribbble fa-xl"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="team__card">
-                    <img src="img/man 3.png" alt="John">
-                    <p class="team__name">
-                        ronobir sing
-                    </p>
-                    <p class="team__post">
-                        admin
-                    </p>
-                    <div class="team__icons">
-                        <a href="#" class="team__icons-link">
-                            <div class="facebook link__ico">
-                                <i class="fa-brands fa-facebook-f fa-xl"></i>
-                            </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="twitter link__ico">
-                                <i class="fa-brands fa-twitter fa-xl"></i>
-                            </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="message link__ico">
-                                <i class="fa-solid fa-comments fa-xl"></i>
-                            </div>
-                        </a>
-                        <a href="#" class="team__icons-link">
-                            <div class="dribble link__ico">
-                                <i class="fa-brands fa-dribbble fa-xl"></i>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -412,7 +635,7 @@
             </div>
             <div class="blog__row">
                 <div class="row__left">
-                    <img src="img/SEO.png" alt="SEO">
+                    <img src="img/seo.png" alt="SEO">
                 </div>
                 <div class="row__right">
                     <p class="row__title">
@@ -525,11 +748,11 @@
             <form action="">
                 <div class="contacts__form">
                     <div class="form__name-email">
-                        <input type="text" class="form__name" placeholder="Your NAME" required>
-                        <input type="email" class="form__email" placeholder="Your Email" required>
+                        <input type="text" id="name" class="form__name" onkeyup="Check_validate()" placeholder="Your Name">
+                        <input type="email" id="email" class="form__email" onkeyup="Check_validate()" placeholder="Your Email">
                     </div>
-                    <textarea name="message" id="form__message" rows="10" placeholder="Write Message"></textarea>
-                    <button class="form__button">
+                    <textarea name="message" id="form__message" rows="10" onkeyup="Check_validate()" placeholder="Write Message"></textarea>
+                    <button id="submit_button" class="form__button" type="button" disabled>
                         send
                     </button>
                 </div>
@@ -539,35 +762,15 @@
     <footer>
         All rights Reserved © 2017
     </footer>
-    <!-- Модальное окно -->
-    <div id="wrapper-modal"> 
-        <div id="overlay" id="modal-overlay"></div>
-        <div id="modal-window">
-            <div id="modal-header">   
-                <h2 id="model-title">Title</h2>
-            </div>
-            <div id="modal-content">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-            </div>
-        </div>
-    </div> 
+    
 
     <div id="pricing-modal-wrapper">
         <div id="pricing-modal">
             <span id="pricing-modal-close">&times;</span>
-            <form class="pricing-modal-form-wrapper" onchange="onFormChange(event)" onsubmit="onFormSubmit(event)">
-                <input type="text" class="pricing-modal-field" id="name" placeholder="Your Name" onchange="onFieldChange(event)">
-                <input type="email" class="pricing-modal-field" id="email" placeholder="Your Email" onchange="onFieldChange(event)">
-                <input type="text" class="pricing-modal-field" id="phone" placeholder="Your Phone" onchange="onFieldChange(event)">
+            <form class="pricing-modal-form-wrapper">
+                <input type="text" class="pricing-modal-field" id="pricename" placeholder="Your Name">
+                <input type="email" class="pricing-modal-field" id="emailll" placeholder="Your Email" >
+                <input type="text" class="pricing-modal-field" id="pricephone" placeholder="Your Phone" >
                 <input type="submit" class="pricing-modal-btn" value="send" disabled>
             </form>
             <div id="order-accept">
