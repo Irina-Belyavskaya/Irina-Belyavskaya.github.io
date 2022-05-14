@@ -5,9 +5,12 @@ body {
     padding: 0;
 	margin: 0;
     
+<<<<<<< HEAD
+=======
 }
 .lock {
     overflow: hidden;
+>>>>>>> 74f0851fa11bc25d80393157228f1ccf77208b55
 }
 div, p, input, button, form, span, li, ul a {
     box-sizing: border-box;
@@ -21,6 +24,11 @@ h1, h3, h4, h5, h6 {
 p {
     font-weight: 400;
     font-size: 15px;
+    line-height: 20px;
+}
+
+.lock {
+    overflow: hidden;
 }
 
 h2 {
@@ -729,7 +737,10 @@ footer {
 }
 
 /* Модальное окно */
+<<<<<<< HEAD
+=======
 
+>>>>>>> 74f0851fa11bc25d80393157228f1ccf77208b55
 #wrapper-modal.open #overlay,
 #wrapper-modal.open #modal-window {
     visibility: visible;
@@ -752,12 +763,21 @@ footer {
 }
 
 #modal-window {
+<<<<<<< HEAD
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 400px;
+=======
     position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%);
     width: 600px;
     height: auto;
+>>>>>>> 74f0851fa11bc25d80393157228f1ccf77208b55
     z-index: 2;
     background-color: #00897b;
     color: white;
@@ -875,4 +895,8 @@ footer {
 
 .active {
     background: #3949ab;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 74f0851fa11bc25d80393157228f1ccf77208b55

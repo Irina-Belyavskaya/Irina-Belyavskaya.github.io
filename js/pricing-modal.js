@@ -63,7 +63,10 @@ priceBtn.forEach(item => {
         }
     })
 })
+<<<<<<< HEAD
+=======
 
+>>>>>>> 74f0851fa11bc25d80393157228f1ccf77208b55
 let initial;
 function closeModalFunc() {
     
@@ -83,4 +86,8 @@ function showOrderModal() {
     
     closeModal.style = "display: block"
     orderLabel.style = "display: block";
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 74f0851fa11bc25d80393157228f1ccf77208b55
